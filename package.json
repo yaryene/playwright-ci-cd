@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "install:all": "concurrently \"npm install --prefix ./client\" \"npm install --prefix ./server\"",
-    "start": "concurrently \"npm run dev --prefix ./client\" \"npm run dev --prefix ./server\"",
+    "start": "npx concurrently \"npm run dev --prefix ./client\" \"npm run dev --prefix ./server\"",
     "postinstall": "npm run install:all"
   },
   "devDependencies": {
